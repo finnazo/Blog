@@ -273,6 +273,7 @@ header.masthead {
   background-attachment: scroll;
   position: relative;
   background-size: cover;
+  
 }
 
 
@@ -286,6 +287,7 @@ header.masthead .overlay {
   width: 100%;
   background-color: #212529;
   opacity: 0.5;
+  
 }
 
 
@@ -296,6 +298,7 @@ header.masthead .post-heading,
 header.masthead .site-heading {
   padding: 200px 0 150px;
   color: white;
+  
 }
 
 
@@ -306,6 +309,8 @@ header.masthead .site-heading {
   header.masthead .post-heading,
   header.masthead .site-heading {
     padding: 200px 0;
+    
+    
   }
 
 
@@ -318,6 +323,8 @@ header.masthead .site-heading {
 header.masthead .page-heading,
 header.masthead .site-heading {
   text-align: center;
+  
+  
 }
 
 
