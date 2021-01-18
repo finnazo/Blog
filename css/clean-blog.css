@@ -8,6 +8,7 @@ body {
   font-size: 20px;
   color: #212529;
   font-family: 'Lora', 'Times New Roman', serif;
+  
 }
 
 
@@ -629,8 +630,8 @@ footer .copyright {
   padding: 25px 35px;
 }
 
+.shadow{
 
-.amirifont{
-   font-family: Amiri;
-   font-weight: 1;
+  text-shadow: 2px 2px 4px #000000ad;
+
 }
