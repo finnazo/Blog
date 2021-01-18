@@ -9,6 +9,9 @@
   @include sans-serif-font;
 }
 
+
+
+
 .btn-primary {
   background-color: $primary;
   border-color: $primary;
@@ -19,9 +22,18 @@
     background-color: darken($primary, 7.5) !important;
     border-color: darken($primary, 7.5) !important;
   }
+
+
+
 }
+
+
+
 
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
 }
+
+
+

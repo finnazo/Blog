@@ -21,7 +21,13 @@
       color: $gray-600;
       @include serif-font;
     }
+
+
+
   }
+
+
+
   label {
     font-size: 0.85em;
     line-height: 1.764705882em;
@@ -36,23 +42,47 @@
     transition: top 0.3s ease, opacity 0.3s ease;
     opacity: 0;
   }
+
+
+
   .help-block {
     margin: 15px 0;
   }
+
+
+
 }
+
+
+
 
 .floating-label-form-group-with-value {
   label {
     top: 0;
     opacity: 1;
   }
+
+
+
 }
+
+
+
 
 .floating-label-form-group-with-focus {
   label {
     color: $primary;
   }
+
+
+
 }
+
+
+
 form .form-group:first-child .floating-label-form-group {
   border-top: 1px solid $gray-300;
 }
+
+
+

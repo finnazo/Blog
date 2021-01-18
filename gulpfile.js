@@ -30,11 +30,14 @@ function browserSync(done) {
   browsersync.init({
     server: {
       baseDir: "./"
-    },
+    }
+,
     port: 3000
-  });
+  }
+);
   done();
 }
+
 
 // BrowserSync reload
 function browserSyncReload(done) {
@@ -42,10 +45,12 @@ function browserSyncReload(done) {
   done();
 }
 
+
 // Clean vendor
 function clean() {
   return del(["./vendor/"]);
 }
+
 
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
@@ -67,6 +72,7 @@ function modules() {
   return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery);
 }
 
+
 // CSS task
 function css() {
   return gulp
@@ -75,22 +81,27 @@ function css() {
     .pipe(sass({
       outputStyle: "expanded",
       includePaths: "./node_modules",
-    }))
+    }
+))
     .on("error", sass.logError)
     .pipe(autoprefixer({
       cascade: false
-    }))
+    }
+))
     .pipe(header(banner, {
       pkg: pkg
-    }))
+    }
+))
     .pipe(gulp.dest("./css"))
     .pipe(rename({
       suffix: ".min"
-    }))
+    }
+))
     .pipe(cleanCSS())
     .pipe(gulp.dest("./css"))
     .pipe(browsersync.stream());
 }
+
 
 // JS task
 function js() {
@@ -104,13 +115,16 @@ function js() {
     .pipe(uglify())
     .pipe(header(banner, {
       pkg: pkg
-    }))
+    }
+))
     .pipe(rename({
       suffix: '.min'
-    }))
+    }
+))
     .pipe(gulp.dest('./js'))
     .pipe(browsersync.stream());
 }
+
 
 // Watch files
 function watchFiles() {
@@ -118,6 +132,7 @@ function watchFiles() {
   gulp.watch(["./js/**/*", "!./js/**/*.min.js"], js);
   gulp.watch("./**/*.html", browserSyncReload);
 }
+
 
 // Define complex tasks
 const vendor = gulp.series(clean, modules);
