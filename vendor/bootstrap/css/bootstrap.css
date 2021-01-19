@@ -5638,7 +5638,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 2px) {
   .list-group-horizontal-lg {
     -ms-flex-direction: row;
     flex-direction: row;
