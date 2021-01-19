@@ -167,12 +167,13 @@ img::-moz-selection {
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
+
 }
 
 
 
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1px) {
   #mainNav {
     border-bottom: 1px solid transparent;
     background: transparent;
@@ -211,7 +212,7 @@ img::-moz-selection {
 
 
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1px) {
   #mainNav {
     transition: background-color 0.2s;
     /* Force Hardware Acceleration in WebKit */
@@ -307,7 +308,7 @@ header.masthead .site-heading {
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1px) {
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
@@ -356,7 +357,7 @@ header.masthead .site-heading .subheading {
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1px) {
   header.masthead .page-heading h1,
   header.masthead .site-heading h1 {
     font-size: 80px;
@@ -412,7 +413,7 @@ header.masthead .post-heading .meta a {
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1px) {
   header.masthead .post-heading h1 {
     font-size: 55px;
   }
@@ -488,7 +489,7 @@ header.masthead .post-heading .meta a {
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1px) {
   .post-preview > a > .post-title {
     font-size: 36px;
   }
